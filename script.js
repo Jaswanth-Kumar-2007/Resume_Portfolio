@@ -7,12 +7,21 @@ loader.style.display = "none";
 
 links.forEach(link => {
     link.addEventListener("click", (event) => {
-        event.preventDefault();
+        event.preventDefault();   // stop immediate jump
+
         loader.style.display = "flex";
-        setTimeout(()=>{
+
+        const target = link.getAttribute("href");
+
+        setTimeout(() => {
             loader.style.display = "none";
-        },2000)
-        console.log("Clicked");
+            if (target.startsWith("#")) {
+                document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.location.href = target;
+            }
+        }, 2000);
     });
 });
+
 

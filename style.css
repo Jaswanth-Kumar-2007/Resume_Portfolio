@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -63,4 +64,19 @@ body{
     }to{
         transform:rotate(360deg);
     }
+}
+
+#contactme{
+    height:100vh;
+    background-color: aqua;
+}
+
+#skills{
+    height: 100vh;
+    background-color: green;
+}
+
+#aboutme{
+    height: 100vh;
+    background-color: red;
 }
