@@ -1,6 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
 body{
-    height: 100vh;
+    background:#052F5F;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    background-color: #005377;
+}
+
+#header a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header a:hover{
+    color:red;
+}
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap:40px;
     justify-content: center;
+    background-color: black;
+}
+
+#circle{
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+    border:5px solid grey;
+    border-top:5px solid white;
+    animation:circle 2s linear infinite; 
+}
+
+@keyframes circle{
+    from{
+        transform:rotate(0deg);
+    }to{
+        transform:rotate(360deg);
+    }
 }
