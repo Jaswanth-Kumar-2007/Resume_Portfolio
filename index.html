@@ -7,25 +7,68 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="mobile">
+        <p>Presently Development in Laptop Version Sorry for Inconvenience</p>
+    </div>
     <div id="header">
-        <a href="#" class="link">Home</a>
-        <a href="#aboutme" class="link">About Me</a>
-        <a href="#skills" class="link">Skills</a>
-        <a href="#" class="link">Projects</a>
-        <a href="#contactme" class="link">Contact Me</a>
+        <a href="#home">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#skills">Skills</a>
+        <!--<a href="#projects" class="link">Projects</a>-->
+        <a href="#contactme">Contact Me</a>
+    </div>
+    <div id="home">
+        <video id="vid" loop autoplay muted>
+            <source src="Assets/beach.mp4">
+        </video>
+        <div id="home-bar">
+            <input  id="home-display" value="🚀 My Journey" readonly>
+            <p id="home-text">Welcome to KJK Portfolio</p>
+            <p id="home-para">I am Currently Pursuing DSAI , B.Tech in IIT Bhilai</p>
+        </div>
+    </div>
+    <div id="aboutme">
+        <div id="aboutme-pic">
+            <img src="Assets/Profile Picture.jpg" alt="Profile Picture" width="460px" height="460px">
+        </div>
+        <div id="aboutme-text">
+            <p>Hi , I am <span>Jaswanth Kumar</span> , I am Currently Pursuing Data Science and Artificial Intelligence in IIT Bhilai . My Graduation Year is 2029 . I am Interested in Problem Solving and Development . I am Curious to Learn on New Aspects . I Completed my School Age from Sri Chaitanya Techno School and I completed My Intermediate from Sri Chaitanya College . </p>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="skill-bar">
+            <h2>Python</h2>
+            <p>I gained my Python Sills from My Academic Course and I solved so Many Problems with Python Code.</p>
+            <p>Click this ➡️ <a href="https://github.com/Jaswanth-Kumar-2007/Python-Works" class="link" target="_blank">Python Works</a> <br> to Check out My Python Skills</p>
+        </div>
+        <div class="skill-bar">
+            <h2>HTML,CSS,JavaScript</h2>
+            <p>I gained my HTML , CSS , JavaScript Sills from the Youtube Course for the Project</p>
+            <p>Click this ➡️ <a href="https://github.com/Jaswanth-Kumar-2007/HTML-CSS-JS-Works" class="link" target="_blank">HTML-Projects</a> to Check out My HTML , CSS, JavaScript Skills</p>
+        </div>
+        <div class="skill-bar">
+            <h2>Git & Github</h2>
+            <p>I gained my Hit and Github Skills and I done Branching to the Projects Can Be See in My Github Account</p>
+            <p>Click this ➡️ <a href="https://github.com/Jaswanth-Kumar-2007/Introduction-to-Git-and-GitHub" class="link" target="_blank">Git & GitHub</a> to Check out the Git Commands and My GitHub Repo</p>
+        </div>
+    </div>
+    <!--<div id="projects">
+        <p>Projects</p>
+    </div>-->
+    <div id="contactme">
+        <h2>Contact Me ⬇️</h2>
+        <div id="contactme-bar">
+            <a href="https://www.instagram.com/kjk._.06/" class="link"  target="_blank"><img class="contactme-img" src="Assets/instagram.png" alt="instagram" width="512px" height="512px"></a>
+            <a href="https://github.com/Jaswanth-Kumar-2007" class="link" target="_blank"><img class="contactme-img" src="Assets/github.png" alt="github" width="512px" height="512px"></a>
+            <a href="https://www.linkedin.com/in/jaswanth-kumar-kamireddi-86ba09373/" class="link" target="_blank"><img class="contactme-img" src="Assets/linkedin.png" alt="linkedin" width="512px" height="512px"></a>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; All CopyRigths Reserved ;</p>
     </div>
     <div id="loader">
         <div id="circle"></div>
         <p>Loading Wait a Minute...</p>
-    </div>
-    <div id="aboutme">
-        <p>About Me</p>
-    </div>
-    <div id="skills">
-        <p>Skills</p>
-    </div>
-    <div id="contactme">
-        <a href="https://www.instagram.com/kjk._.06/">Instagram</a>
     </div>
     <script src="script.js"></script>
 </body>

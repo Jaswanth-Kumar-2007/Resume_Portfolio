@@ -1,21 +1,25 @@
 alert("Welcome to KJK Resume Portfolio")
 
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll(".link");
 const loader = document.getElementById("loader");
 
 loader.style.display = "none";
 
 links.forEach(link => {
     link.addEventListener("click", (event) => {
-        event.preventDefault();   // stop immediate jump
+        event.preventDefault();
 
         loader.style.display = "flex";
 
         const target = link.getAttribute("href");
+        const isBlank = link.getAttribute("target") === "_blank";
 
         setTimeout(() => {
             loader.style.display = "none";
-            if (target.startsWith("#")) {
+
+            if (isBlank) {
+                window.open(target, "_blank"); 
+            } else if (target.startsWith("#")) {
                 document.querySelector(target).scrollIntoView({ behavior: "smooth" });
             } else {
                 window.location.href = target;
@@ -23,5 +27,6 @@ links.forEach(link => {
         }, 2000);
     });
 });
+
 
 
