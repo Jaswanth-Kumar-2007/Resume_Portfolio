@@ -3,6 +3,7 @@ alert("Welcome to KJK Resume Portfolio")
 const links = document.querySelectorAll(".link");
 const loader = document.getElementById("loader");
 
+loader.style.display = "none";
 
 links.forEach(link => {
     link.addEventListener("click", (event) => {
