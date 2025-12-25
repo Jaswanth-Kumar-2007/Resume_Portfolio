@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
 }
 
-
 #header{
     position: sticky;
     top:20px;
@@ -57,12 +56,17 @@
     animation:circle 2s linear infinite; 
 }
 
+
 @keyframes circle{
     from{
         transform:rotate(0deg);
     }to{
         transform:rotate(360deg);
     }
+}
+
+#loader{
+    display: none;
 }
 
 #home,#aboutme,#skills,#projects,#contactme{
@@ -136,7 +140,7 @@
 }
 
 .skill-bar{
-    width:20vw;
+    width:25vw;
     height: 50vh;
     display: flex;
     align-items: center;

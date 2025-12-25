@@ -3,7 +3,6 @@ alert("Welcome to KJK Resume Portfolio")
 const links = document.querySelectorAll(".link");
 const loader = document.getElementById("loader");
 
-loader.style.display = "none";
 
 links.forEach(link => {
     link.addEventListener("click", (event) => {
@@ -19,10 +18,6 @@ links.forEach(link => {
 
             if (isBlank) {
                 window.open(target, "_blank"); 
-            } else if (target.startsWith("#")) {
-                document.querySelector(target).scrollIntoView({ behavior: "smooth" });
-            } else {
-                window.location.href = target;
             }
         }, 2000);
     });
