@@ -6,10 +6,113 @@
     <title>Resume-Portfolio</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="Assets/JK.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
 </head>
 <body>
     <div id="mobile">
-        <p>Presently Development in Laptop Version Sorry for Inconvenience</p>
+        <div id="mobile-header">
+            <button id="menu-btn">☰</button>
+            <div id="mobile-menu">
+                <a href="#mobile-home">Home</a>
+                <a href="#mobile-aboutme">About Me</a>
+                <a href="#mobile-education">Education</a>
+                <a href="#mobile-skills">Skills</a>
+                <a href="#mobile-experience">Experience</a>
+                <a href="#mobile-contactme">Contact Me</a>
+            </div>
+        </div>
+        <div id="mobile-home">
+            <div id="mobile-home-container1">
+                <div id="mobile-profile-1">
+                    <input  id="mobile-home-display" value="🚀 My Journey" readonly>
+                    <img id="mobile-jk-logo" src="Assets/JK-Logo.png" alt="logo" width="512px" height="512px">
+                    <p id="mobile-welcome-text">Hi , I'm <span>Jaswanth Kumar</span></p>
+                    <p id="mobile-home-text">Passionate developer</p>
+                    <!-- | Problem solver | Lifelong learner -->
+                </div>
+                <div id="mobile-profile-2">
+                    <div id="mobile-link-section">
+                        <button id="mobile-github"><img src="Assets/github.png" alt="github"></button>
+                        <button id="mobile-instgram"><img src="Assets/instagram.png" alt="instagram"></button>
+                        <button id="mobile-linkedin"><img src="Assets/linkedin.png" alt="linkedin"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-aboutme">
+            <div id="mobile-aboutme-container">
+                <p id="mobile-home-para">I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at the Indian Institute of Technology (IIT) Bhilai, starting from July 2025. I am focused on building a strong foundation in programming, data structures, machine learning, and core computer science concepts.</p>
+            </div>
+        </div>
+        <div id="mobile-education">
+            <div id="mobile-school">
+                <h2>School</h2>
+                <p>I completed my 10th grade from Sri Chaitanya Techno School under the State Board of Secondary Education (SSC) during the academic year July 2022 to May 2023. I successfully achieved a grade of 96.67%, scoring 580 out of 600 marks.</p>
+            </div>
+            <div id="mobile-college">
+                <h2>College</h2>
+                <p>I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at the Indian Institute of Technology, Bhilai, starting from July 2025. I am actively building programming skills, particularly in Python, and exploring various concepts related to data science and artificial intelligence to strengthen my technical expertise.</p>
+            </div>
+        </div>
+        <div id="mobile-skills">
+            <div id="mobile-programming-languages">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div id="mobile-web-development">
+                <h2>Web Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div id="mobile-tools-version">
+                <h2>Tools & Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-experience">
+            <div id="mobile-undergraduate">
+                <h2>Undergraduate Student</h2>
+                <h3>Indian Institute of Technology, Bhilai</h3>
+                <p><strong>Duration:</strong> Jul 2025 – Present</p>
+                <p><strong>Location:</strong> Chhattisgarh, India (On-site)</p>
+                <p>
+                    I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at IIT Bhilai. 
+                    Through this program, I am building strong foundations in programming, data analysis, and problem solving while 
+                    developing practical skills in Python and modern computing technologies.
+                </p>
+            </div>
+            <div id="mobile-hacktoberfest">
+                <h2>Open Source Contributor</h2>
+                <h3>Hacktoberfest 2025</h3>
+                <p><strong>Duration:</strong> Oct 2025</p>
+                <p><strong>Location:</strong> Remote</p>
+                <ul>
+                    <li>Completed 6 accepted pull requests across global open-source repositories.</li>
+                    <li>Collaborated with developers worldwide using Git and GitHub.</li>
+                    <li>Improved project documentation and fixed issues in repositories.</li>
+                    <li>Earned the Hacktoberfest “Super Contributor” badge.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-contactme">
+            <form id="mobile-form-contactme">
+                <label>Name:</label>
+                <input placeholder="Enter your Name">
+                <label>Email ID:</label>
+                <input placeholder="Enter your EmailID">
+            </form>
+            <p>&copy; All CopyRigths Reserved ;</p>
+        </div>
     </div>
     <div id="header">
         <a href="#home">Home</a>
@@ -72,5 +175,18 @@
         <p>Loading Wait a Minute...</p>
     </div>
     <script src="script.js"></script>
+    <script>
+    window.onload = function() {
+    VANTA.DOTS({
+        el: "#mobile-home",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        color: 0xededed,
+        color2: 0xffffff,
+        showLines: false
+    });
+    }
+    </script>
 </body>
 </html>
