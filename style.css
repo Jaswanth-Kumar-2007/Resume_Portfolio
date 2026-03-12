@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #header{
     position: sticky;
     top:20px;
@@ -312,7 +316,7 @@ span{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 25px;
         width:100%;
         gap:20px;
         background: transparent;
@@ -331,7 +335,20 @@ span{
         color:white;
         background-color: black;
         margin:10px;
+        animation: glow 1s alternate-reverse infinite;
     }
+
+    @keyframes glow{
+        0%{background-color: black;
+        color: white;}
+        100%{
+            background-color: white;
+            color: black;
+        }
+    }
+
+
+
     #mobile-home-text{
         font-size: 15px;
         font-weight: bold;
@@ -404,19 +421,21 @@ span{
     }
 
     #mobile-link-section{
-        margin:20px;
+        margin:10px;
         padding:20px;
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
+        border:1px solid rgb(73, 73, 73);
+        border-radius: 80px;
         width:80vw;
     }
 
     #mobile-jk-logo{
-        width:64px;
+        width:80px;
         border-radius: 50px;
-        height:64px;
+        height:80px;
         margin:20px;
         background-color: #222222;
     }
@@ -594,5 +613,54 @@ span{
     #mobile-hacktoberfest li{
         font-size:10px;
         line-height:1.4;
+    }
+    #mobile-github:hover{
+        transform: translateY(-4px);
+    }
+    #mobile-instagram:hover{
+        transform: translateY(-4px);
+    }
+    #mobile-linkedin:hover{
+        transform: translateY(-4px);
+    }
+    #mobile-aboutme-container:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-school:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-college:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-programming-languages:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-web-development:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-tools-version:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-undergraduate:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
+    }
+    #mobile-hacktoberfest:hover{
+        transform: translateY(-6px);
+        background-color:#2222222a;
+        border: 1px solid rgba(255, 255, 255, 0.701);
     }
 }

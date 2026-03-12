@@ -14,6 +14,22 @@ btn.onclick = function(){
     menu.classList.toggle("show");
 }
 
+document.addEventListener("click", function(e){
+
+    if(!menu.contains(e.target) && !btn.contains(e.target)){
+        menu.classList.remove("show");
+    }
+
+});
+
+const menuLinks = document.querySelectorAll("#mobile-menu a");
+
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("show");
+    });
+});
+
 const texts = [
 "Passionate Developer",
 "Problem Solver",
