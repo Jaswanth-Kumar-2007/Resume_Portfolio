@@ -3,15 +3,15 @@
 const links = document.querySelectorAll(".link");
 const loader = document.getElementById("loader");
 
+const mobile_insta = document.getElementById("mobile-instagram");
+const mobile_git = document.getElementById("mobile-github");
+const mobile_linked = document.getElementById("mobile-linkedin");
+
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");
 
 btn.onclick = function(){
-    if(menu.style.display === "flex"){
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
-    }
+    menu.classList.toggle("show");
 }
 
 const texts = [
@@ -48,6 +48,23 @@ links.forEach(link => {
         }, 2000);
     });
 });
+
+
+
+
+mobile_insta.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.open("https://instagram.com/kjk._.06","_blank");
+})
+mobile_git.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.open("https://github.com/Jaswanth-Kumar-2007","_blank");
+})
+mobile_linked.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.open("https://linkedin.com/in/jaswanth-kumar-kamireddi-86ba09373","_blank");
+})
+
 
 
 
