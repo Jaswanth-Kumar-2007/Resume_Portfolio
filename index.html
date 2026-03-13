@@ -12,7 +12,7 @@
 <body>
     <div id="mobile">
         <div id="mobile-header">
-            <img id="menu-jk-logo" src="Assets/JK-Mobile-Logo.png">
+            <a href="#mobile-home"><img id="menu-jk-logo" src="Assets/JK-Mobile-Logo.png"></a>
             <button id="menu-btn">☰</button>
             <div id="mobile-menu">
                 <a href="#mobile-home">Home</a>
@@ -45,21 +45,37 @@
             </div>
         </div>  
         <div id="mobile-aboutme">
+            <h1>About Me</h1>
             <div id="mobile-aboutme-container">
-                <p id="mobile-home-para">I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at the Indian Institute of Technology (IIT) Bhilai, starting from July 2025. I am focused on building a strong foundation in programming, data structures, machine learning, and core computer science concepts.</p>
+                <p id="mobile-home-para">I am currently pursuing a Bachelor of Technology (B.Tech) in <span class="highlight">Data Science and Artificial Intelligence </span>at the Indian Institute of Technology (IIT) Bhilai, starting from July 2025. I am focused on building a strong foundation in <span class="highlight">programming, data structures, machine learning, and core computer science concepts.</span>
+                                        <br>Through my academic journey, I aim to develop both theoretical understanding and practical experience in modern technologies. I actively explore areas such as <span class="highlight">web development, data analysis, and emerging AI tools </span>to strengthen my technical skill set. I am passionate about continuous learning and enjoy building projects that help me apply concepts to real-world problems while improving my problem-solving abilities.</p>
             </div>
         </div>
         <div id="mobile-education">
-            <div id="mobile-school">
-                <h2>School</h2>
-                <p>I completed my 10th grade from Sri Chaitanya Techno School under the State Board of Secondary Education (SSC) during the academic year July 2022 to May 2023. I successfully achieved a grade of 96.67%, scoring 580 out of 600 marks.</p>
-            </div>
+            <h1>Education</h1>
             <div id="mobile-college">
                 <h2>College</h2>
-                <p>I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at the Indian Institute of Technology, Bhilai, starting from July 2025. I am actively building programming skills, particularly in Python, and exploring various concepts related to data science and artificial intelligence to strengthen my technical expertise.</p>
+                <br>
+                <p>I am currently pursuing a Bachelor of Technology (B.Tech) in <span class="highlight">Data Science and Artificial Intelligence </span> the Indian Institute of Technology, Bhilai, starting from July 2025. I am actively building programming skills, particularly in Python, and exploring various concepts related to data science and artificial intelligence to strengthen my technical expertise.</p>
+                <div id="mobile-skill-section">
+                    <input class="mobile-skill-bar" value="Python" readonly>
+                    <input class="mobile-skill-bar" value="Git" readonly>
+                    <input class="mobile-skill-bar" value="GitHub" readonly>
+                </div>            
+            </div>
+            <div id="mobile-school">
+                <h2>School</h2>
+                <br>
+                <p>I completed my 10th grade from <span class="highlight">Sri Chaitanya Techno School </span> under the State Board of Secondary Education (SSC) during the academic year July 2022 to May 2023. I successfully achieved a grade of 96.67%, scoring 580 out of 600 marks.</p>
+                <div id="mobile-skill-section">
+                    <input class="mobile-skill-bar" value="Maths" readonly>
+                    <input class="mobile-skill-bar" value="Physics" readonly>
+                    <input class="mobile-skill-bar" value="Chemistry" readonly>
+                </div>
             </div>
         </div>
         <div id="mobile-skills">
+            <h1>Skills</h1>
             <div id="mobile-programming-languages">
                 <h2>Programming Languages</h2>
                 <ul>
@@ -84,19 +100,22 @@
             </div>
         </div>
         <div id="mobile-experience">
+            <h1>Experience</h1>
             <div id="mobile-undergraduate">
                 <h2>Undergraduate Student</h2>
+                <br>
                 <h3>Indian Institute of Technology, Bhilai</h3>
                 <p><strong>Duration:</strong> Jul 2025 – Present</p>
                 <p><strong>Location:</strong> Chhattisgarh, India (On-site)</p>
                 <p>
-                    I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at IIT Bhilai. 
+                    I am currently pursuing a Bachelor of Technology (B.Tech) in Data Science and Artificial Intelligence at <span class="highlight">IIT Bhilai. </span>
                     Through this program, I am building strong foundations in programming, data analysis, and problem solving while 
                     developing practical skills in Python and modern computing technologies.
                 </p>
             </div>
             <div id="mobile-hacktoberfest">
                 <h2>Open Source Contributor</h2>
+                <br>
                 <h3>Hacktoberfest 2025</h3>
                 <p><strong>Duration:</strong> Oct 2025</p>
                 <p><strong>Location:</strong> Remote</p>
@@ -104,18 +123,24 @@
                     <li>Completed 6 accepted pull requests across global open-source repositories.</li>
                     <li>Collaborated with developers worldwide using Git and GitHub.</li>
                     <li>Improved project documentation and fixed issues in repositories.</li>
-                    <li>Earned the Hacktoberfest “Super Contributor” badge.</li>
+                    <li>Earned the Hacktoberfest <span class="highlight">“Super Contributor” </span> badge.</li>
                 </ul>
             </div>
         </div>
         <div id="mobile-contactme">
+            <h1>Contact Me</h1>
             <form id="mobile-form-contactme">
                 <label>Name:</label>
-                <input placeholder="Enter your Name">
+                <input type="text" placeholder="Enter your Name" required>
                 <label>Email ID:</label>
-                <input placeholder="Enter your EmailID">
+                <input type="email" placeholder="Enter your EmailID" required>
+                <input class="mobile-contact-submit" type="submit" value="Enter">
+                <p class="mobile-mail-id">Mail to <span class="highlight">jaswanthkumarkamireddi@gmail.com </span><br> It won't Work 😅</p>
             </form>
-            <p>&copy; All CopyRigths Reserved ;</p>
+            <p>&copy; <span class="highlight">All CopyRigths Reserved ;</span></p>
+        </div>
+        <div id="mobile-footer">
+            <p>❤️ Made by KJK</p>
         </div>
     </div>
     <div id="header">

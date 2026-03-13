@@ -7,6 +7,9 @@ const mobile_insta = document.getElementById("mobile-instagram");
 const mobile_git = document.getElementById("mobile-github");
 const mobile_linked = document.getElementById("mobile-linkedin");
 
+const contactme = document.querySelector("#mobile-form-contactme");
+const email = document.querySelector(".mobile-mail-id");
+
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");
 
@@ -65,7 +68,10 @@ links.forEach(link => {
     });
 });
 
-
+contactme.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    email.style.display="block";
+})
 
 
 mobile_insta.addEventListener("click",(e)=>{
